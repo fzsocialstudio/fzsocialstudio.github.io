@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fariha Zahra | Digital Marketing & Creative</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f3f7;--fg:#0c0c0c;--soft:#3d4350;--panel:#0c0c0c;--panelfg:#d7e2ea;--g1:#8a93a3;--g2:#2c3442;--line:rgba(12,12,12,.25);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0c0c;--fg:#d7e2ea;--soft:#d7e2ea;--panel:#fff;--panelfg:#0c0c0c;--g1:#646973;--g2:#bbccd7;--line:rgba(215,226,234,.4)}}
+:root[data-theme="dark"]{--bg:#0c0c0c;--fg:#d7e2ea;--soft:#d7e2ea;--panel:#fff;--panelfg:#0c0c0c;--g1:#646973;--g2:#bbccd7;--line:rgba(215,226,234,.4)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{background:var(--bg);color:var(--fg);font-family:'Kanit','Segoe UI',sans-serif;overflow-x:clip}
+.gt{background:linear-gradient(180deg,var(--g1),var(--g2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:900;text-transform:uppercase;line-height:1;letter-spacing:-.02em}
+.h2{font-size:clamp(3rem,12vw,160px);text-align:center}
+#hero{height:100vh;min-height:560px;display:flex;flex-direction:column;padding:0 clamp(1.2rem,4vw,2.5rem);position:relative;overflow-x:clip}
+nav{display:flex;justify-content:space-between;padding-top:1.5rem;text-transform:uppercase;letter-spacing:.08em;font-weight:500;font-size:clamp(.8rem,1.6vw,1.4rem)}
+nav a{color:var(--fg);text-decoration:none;transition:opacity .2s}nav a:hover{opacity:.7}
+#hero h1{font-size:clamp(3.6rem,17vw,17.5vw);white-space:nowrap;margin-top:1rem;overflow:hidden;width:100%}
+.bar{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end;padding-bottom:2rem;position:relative;z-index:20}
+.bar p{max-width:240px;text-transform:uppercase;font-weight:300;letter-spacing:.04em;line-height:1.3;font-size:clamp(.75rem,1.4vw,1.4rem);color:var(--soft)}
+.btn{display:inline-block;color:#fff;text-decoration:none;text-transform:uppercase;letter-spacing:.15em;font-weight:500;border-radius:999px;padding:.9rem 2.4rem;font-size:clamp(.75rem,1.2vw,1rem);background:linear-gradient(123deg,#18011f 7%,#b600a8 37%,#7621b0 72%,#be4c00 100%);box-shadow:0 4px 4px rgba(181,1,167,.25),4px 4px 12px #7721b1 inset;outline:2px solid #fff;outline-offset:-3px}
+.ghost{display:inline-block;border:2px solid #d7e2ea;color:#d7e2ea;border-radius:999px;padding:.7rem 2rem;text-transform:uppercase;letter-spacing:.15em;text-decoration:none;font-weight:500;font-size:.85rem;transition:background .2s}.ghost:hover{background:rgba(215,226,234,.12)}
+#mag{position:absolute;left:50%;bottom:0;margin-left:calc(clamp(150px,22vw,260px)/-1);width:clamp(300px,44vw,520px);height:min(62vh,520px);z-index:10;border-radius:40px 40px 0 0;background:radial-gradient(circle at 50% 30%,#b600a8 0,#7621b0 35%,#18011f 75%);box-shadow:0 0 90px rgba(118,33,176,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;will-change:transform}
+#mag b{font-size:clamp(5rem,14vw,11rem);font-weight:900;line-height:1;opacity:.92}#mag span{letter-spacing:.3em;text-transform:uppercase;font-weight:300;font-size:.8rem;text-align:center}
+#mq{padding:clamp(6rem,12vw,10rem) 0 2.5rem;overflow:hidden}
+.row{display:flex;gap:12px;margin-bottom:12px;will-change:transform;width:max-content}
+.tile{flex:none;width:clamp(240px,30vw,420px);aspect-ratio:420/270;border-radius:24px;display:flex;align-items:flex-end;padding:1.2rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#fff;font-size:clamp(.9rem,1.6vw,1.3rem)}
+#about{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(2.5rem,5vw,4rem);padding:5rem 1.5rem;position:relative;text-align:center}
+#about p{max-width:600px;font-weight:500;line-height:1.7;font-size:clamp(1rem,2vw,1.35rem);color:var(--soft)}
+.c{opacity:.2;transition:opacity .15s}
+.orb{position:absolute;width:clamp(90px,15vw,200px);aspect-ratio:1;border-radius:50%;filter:blur(1px);animation:fl 7s ease-in-out infinite}
+@keyframes fl{50%{transform:translateY(-22px) rotate(8deg)}}
+#svc{background:var(--panel);color:var(--panelfg);border-radius:60px 60px 0 0;padding:clamp(5rem,9vw,8rem) clamp(1.2rem,4vw,2.5rem)}
+#svc .gt{background:none;-webkit-text-fill-color:var(--panelfg);color:var(--panelfg)}
+.list{max-width:1000px;margin:clamp(3rem,6vw,7rem) auto 0}
+.it{display:flex;gap:clamp(1rem,4vw,3rem);padding:clamp(2rem,4vw,3rem) 0;border-top:1px solid rgba(128,128,128,.4);align-items:flex-start}
+.it .n{font-size:clamp(3rem,10vw,140px);font-weight:900;line-height:.9}
+.it h3{text-transform:uppercase;font-weight:500;font-size:clamp(1rem,2.2vw,2.1rem)}
+.it p{font-weight:300;line-height:1.6;max-width:42rem;opacity:.65;font-size:clamp(.85rem,1.6vw,1.25rem);margin-top:.5rem}
+#work{background:var(--bg);border-radius:60px 60px 0 0;margin-top:-3.5rem;position:relative;z-index:10;padding:clamp(5rem,9vw,8rem) clamp(1rem,3vw,2rem) 6rem}
+.wrap{height:85vh}
+.card{position:sticky;border:2px solid #d7e2ea;border-radius:50px;background:#0c0c0c;color:#d7e2ea;padding:clamp(1rem,2.5vw,2rem);transform-origin:top center;will-change:transform}
+.top{display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between;margin-bottom:1.2rem}
+.top .n{font-size:clamp(2.5rem,8vw,110px);font-weight:900;line-height:1}
+.top small{display:block;text-transform:uppercase;letter-spacing:.15em;font-weight:300;opacity:.7}
+.top h3{text-transform:uppercase;font-weight:500;font-size:clamp(1.1rem,2.4vw,2rem)}
+.g{display:grid;grid-template-columns:4fr 6fr;gap:12px}
+.col{display:flex;flex-direction:column;gap:12px}
+.p{border-radius:40px;padding:1.3rem;display:flex;flex-direction:column;justify-content:flex-end;color:#fff;font-weight:300;font-size:clamp(.75rem,1.3vw,1.05rem)}
+.p b{font-size:clamp(1.4rem,3.6vw,3rem);font-weight:900;line-height:1.1}
+#contact{background:#0c0c0c;color:#d7e2ea;text-align:center;padding:6rem 1.5rem 4rem;display:flex;flex-direction:column;align-items:center;gap:2rem}
+#contact .gt{-webkit-text-fill-color:transparent;background:linear-gradient(180deg,#646973,#bbccd7);-webkit-background-clip:text;background-clip:text}
+.fi{opacity:0;transform:translateY(40px);transition:opacity .8s,transform .8s cubic-bezier(.25,.1,.25,1)}.fi.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.fi{opacity:1;transform:none;transition:none}.orb{animation:none}html{scroll-behavior:auto}}
+@media(max-width:640px){#svc,#work{border-radius:40px 40px 0 0}.p,.card{border-radius:28px}.g{grid-template-columns:1fr}#mag{left:50%;margin-left:-150px}}
+</style></head><body>
+<header id="hero">
+<nav class="fi"><a href="#about">About</a><a href="#svc">Services</a><a href="#work">Work</a><a href="#contact">Contact</a></nav>
+<h1 class="gt fi">Hi, i’m fariha</h1>
+<div id="mag"><b>FZ</b><span>Digital Marketing<br>Social · Content · AI Creative</span></div>
+<div class="bar"><p class="fi">a digital marketer driven by crafting social-first content that gets attention</p><a class="btn fi" href="#contact">Contact Me</a></div>
+</header>
+
+<section id="mq"><div class="row" id="r1"></div><div class="row" id="r2"></div></section>
+
+<section id="about">
+<i class="orb" style="top:4%;left:3%;background:radial-gradient(circle at 30% 30%,#7621b0,#18011f)"></i>
+<i class="orb" style="top:6%;right:3%;background:radial-gradient(circle at 30% 30%,#be4c00,#18011f);animation-delay:-2s"></i>
+<i class="orb" style="bottom:8%;left:8%;background:radial-gradient(circle at 30% 30%,#b600a8,#18011f);animation-delay:-4s"></i>
+<i class="orb" style="bottom:8%;right:8%;background:radial-gradient(circle at 30% 30%,#6f9bff,#18011f);animation-delay:-1s"></i>
+<h2 class="gt h2 fi">About me</h2>
+<p id="ap">Combining digital marketing strategy, social media management and creative content production, i build meaningful brand presence and real audience engagement. From honest product reviews to AI-assisted ad creative, let’s build something that gets noticed!</p>
+<a class="btn fi" href="#contact">Contact Me</a>
+</section>
+
+<section id="svc">
+<h2 class="gt h2 fi">Services</h2>
+<div class="list" id="sl"></div>
+</section>
+
+<section id="work">
+<h2 class="gt h2 fi" style="margin-bottom:4rem">Projects</h2>
+<div id="cards"></div>
+</section>
+
+<section id="contact">
+<h2 class="gt h2">Let’s talk</h2>
+<p style="max-width:520px;font-weight:300">Focused on digital marketing knowledge, social strategy and creative production to build brand presence, engagement and business growth.</p>
+<div><a class="btn" href="mailto:farihazahra.career@gmail.com">Email me</a> <a class="ghost" style="margin-left:.6rem" href="https://linkedin.com/in/fariha-zahra-7a1885436" target="_blank" rel="noopener">LinkedIn</a></div>
+<small style="opacity:.5;margin-top:2rem">© Fariha Zahra</small>
+</section>
+
+<script>
+(function(){
+var $=function(s){return document.querySelector(s)},vh=function(){return innerHeight};
+var clamp=function(v,a,b){return Math.max(a,Math.min(b,v))};
+// marquee tiles
+var T=[['Reels','#7621b0,#18011f'],['UGC Video','#b600a8,#18011f'],['ASMR Reviews','#be4c00,#18011f'],['Hauls','#2f5fe0,#18011f'],['Meta Ads','#7621b0,#be4c00'],['AI Video','#b600a8,#2f5fe0'],['Product Visuals','#18011f,#7621b0'],['Mano & Friends','#be4c00,#b600a8'],['SEO Basics','#2f5fe0,#7621b0'],['Campaigns','#b600a8,#be4c00'],['Storytelling','#18011f,#2f5fe0']];
+function fill(id,list){var h='';for(var k=0;k<3;k++)list.forEach(function(t){h+='<div class="tile" style="background:linear-gradient(135deg,'+t[1]+')">'+t[0]+'</div>'});$(id).innerHTML=h}
+fill('#r1',T.slice(0,6));fill('#r2',T.slice(5));
+// services
+var S=[['Social Media Strategy','Content pillars, audience direction, formats, calendars, campaigns and platform-specific planning, backed by audience and competitor research.'],['Content Creation','Social-first content, captions, hooks, concepts and platform-native creative built for attention.'],['Short-Form & UGC Video','Reels, TikTok-style content, UGC concepts, product demonstrations, reviews and storytelling.'],['Advertising Creative','Social ad concepts, product-focused creative, hooks, visual direction, campaign assets and Meta Ads setup.'],['AI-Assisted Creative','AI-powered visual development, video production and creative direction with consistent characters and brands.']];
+$('#sl').innerHTML=S.map(function(s,i){return '<div class="it fi" style="transition-delay:'+i*80+'ms"><div class="n">0'+(i+1)+'</div><div><h3>'+s[0]+'</h3><p>'+s[1]+'</p></div></div>'}).join('');
+// projects
+var P=[['Organic Results','Vaseline Gluta-Hya Review',['74.9K views','386 likes · 124 comments','Beauty review, short-form'],'#7621b0,#18011f'],['Client Work','Social, Ads & E-commerce',['Campaign visuals','Product fidelity and model consistency','Client details confidential'],'#be4c00,#18011f'],['Original Project','Mano & Friends',['AI character series','Consistent identity across scenes','Expression, story, environment'],'#b600a8,#18011f']];
+$('#cards').innerHTML=P.map(function(p,i){return '<div class="wrap"><div class="card" style="top:calc(6rem + '+i*28+'px)"><div class="top"><div class="n">0'+(i+1)+'</div><div><small>'+p[0]+'</small><h3>'+p[1]+'</h3></div><a class="ghost" href="#contact">View Project</a></div><div class="g"><div class="col"><div class="p" style="height:clamp(130px,16vw,230px);background:linear-gradient(135deg,'+p[3]+')">'+p[2][1]+'</div><div class="p" style="height:clamp(160px,22vw,340px);background:linear-gradient(200deg,'+p[3]+')">'+p[2][2]+'</div></div><div class="p" style="background:linear-gradient(160deg,'+p[3]+')"><b>'+p[2][0]+'</b></div></div></div></div>'}).join('');
+// scroll-reveal text
+var ap=$('#ap'),tx=ap.textContent;ap.innerHTML=tx.split('').map(function(c){return '<span class="c">'+c+'</span>'}).join('');
+var cs=ap.querySelectorAll('.c'),N=cs.length;
+// fade-in
+var io=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{rootMargin:'50px'});
+document.querySelectorAll('.fi').forEach(function(el,i){if(el.closest('#hero'))el.style.transitionDelay=i*.15+'s';io.observe(el)});
+// magnet
+var m=$('#mag');addEventListener('mousemove',function(e){var r=m.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2,dx=e.clientX-cx,dy=e.clientY-cy,pad=150;var on=Math.abs(dx)<r.width/2+pad&&Math.abs(dy)<r.height/2+pad;m.style.transition=on?'transform .3s ease-out':'transform .6s ease-in-out';m.style.transform=on?'translate3d('+dx/3+'px,'+dy/3+'px,0)':'translate3d(0,0,0)'});
+// scroll
+var mq=$('#mq'),r1=$('#r1'),r2=$('#r2'),cards=[].slice.call(document.querySelectorAll('.card')),wraps=[].slice.call(document.querySelectorAll('.wrap'));
+function tick(){
+var y=scrollY,h=vh();
+var off=(y-mq.offsetTop+h)*.3,w=r1.scrollWidth/3,w2=r2.scrollWidth/3;
+r1.style.transform='translateX('+(-w+(off%w))+'px)';r2.style.transform='translateX('+(-(off%w2))+'px)';
+var r=ap.getBoundingClientRect(),p=clamp((h*.8-r.top)/(.6*h+r.height),0,1)*N*1.15;
+for(var i=0;i<N;i++)cs[i].style.opacity=.2+.8*clamp(p-i,0,1);
+cards.forEach(function(c,i){var n=wraps[i+1];var pr=n?clamp(1-n.getBoundingClientRect().top/h,0,1):0;c.style.transform='scale('+(1-pr*.05*(cards.length-1-i+1))+')'});
+}
+addEventListener('scroll',function(){requestAnimationFrame(tick)},{passive:true});addEventListener('resize',tick);tick();
+})();
+</script></body></html>
